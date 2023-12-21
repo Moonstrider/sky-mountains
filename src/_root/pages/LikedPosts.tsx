@@ -1,9 +1,7 @@
-import React from 'react'
-
 const LikedPosts = () => {
   return (
     <div>
-      
+      to be done
     </div>
   )
 }
