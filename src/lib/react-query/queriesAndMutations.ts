@@ -17,7 +17,7 @@ import {
     getPostById,
     updatePost,
     deletePost,
-    getInfititePosts,
+    getInfinitePosts,
     searchPosts,
 } from '../appwrite/api'
 import { INewPost, INewUser, IUpdatePost } from '@/types'
@@ -167,7 +167,7 @@ export const useDeletePost = () => {
 export const useGetPosts = () => {
     return useInfiniteQuery({
         queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
-        queryFn: getInfititePosts,
+        queryFn: getInfinitePosts,
         getNextPageParam: (lastPage) => {
             if (lastPage && lastPage.documents.length === 0) return null;
 

@@ -324,10 +324,10 @@ export async function deletePost(postId: string, imageId: string) {
     }
 }
 
-export async function getInfititePosts({ pageParam }: { pageParam: number }) {
+export async function getInfinitePosts({ pageParam }: { pageParam: number }) {
     // Explore页面 瀑布式分页查询，每次查10个post
     // 利用"react-intersection-observer"的useInView 的ref和inView来实现瀑布式分页
-    const queries: any[] = [Query.orderDesc('$updatedAt'), Query.limit(10)]
+    const queries: any[] = [Query.orderDesc("$updatedAt"), Query.limit(9)];
 
     if (pageParam) {
         queries.push(Query.cursorAfter(pageParam.toString()));
@@ -338,11 +338,11 @@ export async function getInfititePosts({ pageParam }: { pageParam: number }) {
             appwriteConfig.databaseId,
             appwriteConfig.postCollectionId,
             queries
-        )
+        );
 
-        if (!posts) throw Error
+        if (!posts) throw Error;
 
-        return posts
+        return posts;
     } catch (error) {
         console.log(error);
     }
