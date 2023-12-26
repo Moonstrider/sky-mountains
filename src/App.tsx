@@ -6,7 +6,7 @@ import SignupForm from './_auth/forms/SignupForm';
 import RootLayout from './_root/RootLayout';
 import {
     AllUsers, CreatePost, EditPost, Explore, Home,
-    PostDetails, Profile, Saved, UpdateProfile
+        PostDetails, Profile, Saved, UpdateProfile
 } from './_root/pages';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
