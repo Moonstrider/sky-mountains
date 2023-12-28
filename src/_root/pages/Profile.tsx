@@ -40,7 +40,7 @@ const Profile = () => {
         <div className="flex xl:flex-row flex-col max-xl:items-center flex-1 gap-7">
           <img src={
             currentUser.imageUrl || "/assets/icons/profile-placeholder.svg"
-          } alt="profile" className="w-28 h-28 lg:h-36 rounded-full"
+          } alt="profile" className="w-28 h-28 rounded-full object-cover object-top"
           />
 
           <div className="flex flex-col flex-1 justify-between md:mt-2">

@@ -28,7 +28,7 @@ const PostDetails = () => {
 
               <Link to={`/profile/${post?.creator.$id}`} className="flex items-center gap-3">
                 <img src={post?.creator?.imageUrl || '/assets/icons/profile-placeholder.svg'} alt="creator"
-                  className='rounded-full w-8 h-8 lg:w-12 lg:h-12' />
+                  className='rounded-full w-12 h-12 object-cover object-top' />
 
                 <div className='flex flex-col'>
                   <p className='base-medium lg:body-bold text-light-1'>

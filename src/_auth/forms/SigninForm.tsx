@@ -44,7 +44,8 @@ const SigninForm = () => {
       form.reset();
       navigate('/')
     } else {
-      return toast({ title: 'Sign up failed, please try again' })
+      console.log('...');
+      return toast({ title: 'Sign up failed, please try again.' })
     }
   }
 
