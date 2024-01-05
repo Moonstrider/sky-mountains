@@ -6,7 +6,7 @@ import PostStats from "./PostStats";
 type GridPostListProps = {
   posts?: Models.Document[];
   showUser?: boolean;
-  // 这里的问好代表这个参数是可选的 means optional
+  // 这里的问号代表这个参数是可选的 means optional
   showStats?: boolean;
 }
 
